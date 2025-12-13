@@ -76,10 +76,10 @@ This project follows clean backend architecture and is suitable for real-world a
 ## SETUP & RUN:
 
 
-##### 1.Install Go
+### 1.Install Go
 
 
-Step 1: Download Go
+#### Step 1: Download Go
 
 
 Visit: https://go.dev/dl/
@@ -91,7 +91,7 @@ Download Go for Windows
 Install with default settings
 
 
-Step 2: Verify Installation
+#### Step 2: Verify Installation
 
 
 Open Command Prompt and run:
@@ -102,10 +102,10 @@ Expected output:
 go version go1.xx windows/amd64
 
 
-2.Install PostgreSQL
+### 2.Install PostgreSQL
 
 
-Step 1: Download PostgreSQL
+#### Step 1: Download PostgreSQL
 
 
 Visit: https://www.postgresql.org/download/windows/
@@ -123,7 +123,7 @@ Remember the password
 Keep port as 5432
 
 
-Step 2: Open SQL Shell (psql)
+#### Step 2: Open SQL Shell (psql)
 
 
 After installation:
@@ -138,22 +138,22 @@ Press Enter for defaults
 Enter password when asked
 
 
-3.Create Database & Table
+### 3.Create Database & Table
 
 
-Step 1: Create Database
+#### Step 1: Create Database
 
 
 Inside psql, run:
 CREATE DATABASE user_age_db;
 
 
-Step 2: Connect to Database
+#### Step 2: Connect to Database
 
 \c user_age_db;
 
 
-Step 3: Create users Table
+#### Step 3: Create users Table
 
 
 CREATE TABLE users (
@@ -163,7 +163,7 @@ CREATE TABLE users (
 );
 
 
-4.Set Database Environment Variable
+### 4.Set Database Environment Variable
 
 
 The application reads DB credentials from an environment variable.
@@ -175,14 +175,14 @@ set DATABASE_URL=postgres://postgres:PASSWORD@localhost:5432/user_age_db?sslmode
 If your password contains @, replace it with %40
 
 
-5.Install Project Dependencies
+### 5.Install Project Dependencies
 
 
 run :
 go mod tidy
 
 
-6.Run the Application
+### 6.Run the Application
 
 
 go run cmd/server/main.go
@@ -207,31 +207,31 @@ http://127.0.0.1:3000
 ## API TESTING:
 
 
-Tool Used
+##### Tool Used
 
 
 Postman
 
 
-Download:
+##### Download:
 
 
 https://www.postman.com/downloads/
 
 
-Base URL:
+##### Base URL:
 
 
 http://localhost:3000
 
 
-Create User:
+##### Create User:
 
 
 POST /users
 
 
-Body (JSON):
+##### Body (JSON):
 
 
 {
@@ -240,7 +240,7 @@ Body (JSON):
 }
 
 
-Expected:
+##### Expected:
 
 
 Status: 201 Created
@@ -252,25 +252,25 @@ Age calculated dynamically
 ## Design Explanation:
 
 
-Age is not stored in database
+1.Age is not stored in database
 
 
-Calculated dynamically using Go time package
+2.Calculated dynamically using Go time package
 
 
-Service layer contains business logic
+3.Service layer contains business logic
 
 
-Repository layer handles DB access
+4.Repository layer handles DB access
 
 
-SQLC provides type-safe queries
+5.SQLC provides type-safe queries
 
 
-Zap logger logs every request
+6.Zap logger logs every request
 
 
-APIs tested using Postman
+7.APIs tested using Postman
 
 
 ## Testing Summary:
