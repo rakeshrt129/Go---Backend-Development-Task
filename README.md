@@ -185,11 +185,12 @@ go mod tidy
 ### 6.Run the Application
 
 
+##### run (In Terminal):
 go run cmd/server/main.go
 
 
 
-Expected Output
+##### Expected Output
 
 
 starting user-age-api server
