@@ -17,70 +17,56 @@ This project follows clean backend architecture and is suitable for real-world a
 What This Project Demonstrates:
 
 
-Backend development using Go
+1.Backend development using Go
 
 
-REST APIs using GoFiber
+2.REST APIs using GoFiber
 
 
-Database design using PostgreSQL
+3.Database design using PostgreSQL
 
 
-Type-safe SQL queries using SQLC
+4.Type-safe SQL queries using SQLC
 
 
-Clean architecture (handler, service, repository)
+5.Clean architecture (handler, service, repository)
 
 
-Input validation
+6.Input validation
 
 
-Logging
+7.Logging
 
 
-API testing
+8.API testing
 
 
 Tech Stack:
 
 
-Go
+1.Go
 
 
-GoFiber
+2.GoFiber
 
 
-PostgreSQL
+3.PostgreSQL
 
 
-SQLC
+4.SQLC
 
 
-Uber Zap (Logging)
+5.Uber Zap (Logging)
 
 
-Postman (API testing)
+6.Postman (API testing)
 
 
 Project Structure:
 
 
-user-age-api/
-│
-├── cmd/server/main.go        # Application entry point
-├── db/
-│   ├── migrations/           # DB schema
-│   └── sqlc/queries/         # SQLC queries
-├── internal/
-│   ├── handler/              # HTTP handlers
-│   ├── service/              # Business logic (age calculation)
-│   ├── repository/           # Database connection
-│   ├── routes/               # API routes
-│   ├── models/               # Request & response models
-│   ├── middleware/           # Logging middleware
-│   └── logger/               # Zap logger
-├── go.mod
-└── README.md
+<img width="526" height="394" alt="image" src="https://github.com/user-attachments/assets/85b92313-e974-43cb-9d5d-ec4cc64f4285" />
+
 
 
 
