@@ -1,11 +1,11 @@
-User Age API
+# User Age API
 
 Go + Fiber + PostgreSQL + SQLC
 
 
 
 
-Project Overview:
+## Project Overview:
 
 
 This project is a RESTful API built using Go that manages users with their name and date of birth (DOB).
@@ -16,7 +16,7 @@ Instead, it calculates age dynamically when user data is requested.
 This project follows clean backend architecture and is suitable for real-world applications.
 
 
-What This Project Demonstrates:
+## What This Project Demonstrates:
 
 
 1.Backend development using Go
@@ -43,7 +43,7 @@ What This Project Demonstrates:
 8.API testing
 
 
-Tech Stack:
+## Tech Stack:
 
 
 1.Go
@@ -64,7 +64,7 @@ Tech Stack:
 6.Postman (API testing)
 
 
-Project Structure:
+## Project Structure:
 
 
 <img width="526" height="394" alt="image" src="https://github.com/user-attachments/assets/85b92313-e974-43cb-9d5d-ec4cc64f4285" />
@@ -72,7 +72,8 @@ Project Structure:
 
 
 
-SETUP & RUN:
+
+## SETUP & RUN:
 
 
 1. Install Go
@@ -203,7 +204,7 @@ Fiber v2.x.x
 http://127.0.0.1:3000
 
 
-API TESTING:
+## API TESTING:
 
 
 Tool Used
@@ -248,7 +249,7 @@ Status: 201 Created
 Age calculated dynamically
 
 
-Design Explanation:
+## Design Explanation:
 
 
 Age is not stored in database
@@ -272,7 +273,7 @@ Zap logger logs every request
 APIs tested using Postman
 
 
-Testing Summary:
+## Testing Summary:
 
 
 All CRUD APIs tested
