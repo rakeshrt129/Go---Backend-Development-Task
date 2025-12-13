@@ -169,6 +169,7 @@ CREATE TABLE users (
 The application reads DB credentials from an environment variable.
 
 
+##### run (In Terminal):
 set DATABASE_URL=postgres://postgres:PASSWORD@localhost:5432/user_age_db?sslmode=disable
 
 
@@ -178,7 +179,7 @@ If your password contains @, replace it with %40
 ### 5.Install Project Dependencies
 
 
-run :
+##### run (In Terminal):
 go mod tidy
 
 
