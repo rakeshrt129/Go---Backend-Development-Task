@@ -76,7 +76,7 @@ This project follows clean backend architecture and is suitable for real-world a
 ## SETUP & RUN:
 
 
-1. Install Go
+##### 1.Install Go
 
 
 Step 1: Download Go
