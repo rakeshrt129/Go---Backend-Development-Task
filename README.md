@@ -76,7 +76,7 @@ This project follows clean backend architecture and is suitable for real-world a
 ## SETUP & RUN:
 
 
-### 1.Install Go
+### 1. Install Go
 
 
 #### Step 1: Download Go
@@ -102,7 +102,7 @@ Expected output:
 go version go1.xx windows/amd64
 
 
-### 2.Install PostgreSQL
+### 2. Install PostgreSQL
 
 
 #### Step 1: Download PostgreSQL
@@ -138,7 +138,7 @@ Press Enter for defaults
 Enter password when asked
 
 
-### 3.Create Database & Table
+### 3. Create Database & Table
 
 
 #### Step 1: Create Database
@@ -163,7 +163,7 @@ CREATE TABLE users (
 );
 
 
-### 4.Set Database Environment Variable
+### 4. Set Database Environment Variable
 
 
 The application reads DB credentials from an environment variable.
@@ -176,14 +176,14 @@ set DATABASE_URL=postgres://postgres:PASSWORD@localhost:5432/user_age_db?sslmode
 If your password contains @, replace it with %40
 
 
-### 5.Install Project Dependencies
+### 5. Install Project Dependencies
 
 
 ##### run (In Terminal):
 go mod tidy
 
 
-### 6.Run the Application
+### 6. Run the Application
 
 
 ##### run (In Terminal):
